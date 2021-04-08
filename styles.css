@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.container {
+    background-image: url('./Image1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+input {
+    background-color: transparent;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 16px;
+    text-align: center;
+    color: black;
+    height: 22px;
+    width: 30%;
+    margin-bottom: 10px;
+    transition: ease-in-out, width 1s;
+}
+
+input:hover {
+    cursor: pointer;
+    width: 60%;
+}
+
+input:focus {
+    width: 60%;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.back, .front {
+    width: 40%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px black;
+    padding: 30px;
+    position: absolute;
+    margin-top: 10%;
+    left: 28%;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 16px;
+    text-align: center;
+    color: black;
+    height: 22px;
+    width: 16%;
+    margin-bottom: 10px;
+    transition: ease-in-out, width 1s;
+}
+
+button:hover {
+    width: 30%;
+    cursor: pointer;
+}
+
+.options {
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.option:after {
+    content: "";
+    display: block;
+    height: 1px ;
+    width: 0;
+    background-color: black;
+    transition: ease-in-out, width 1s;
+}
+
+.option:hover {
+    cursor: pointer;
+}
+
+.option:hover::after {
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.mainForm {
+    transition: all 1s ease-in-out;
+    transform-style: preserve-3d;
+}

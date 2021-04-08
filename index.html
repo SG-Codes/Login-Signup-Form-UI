@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>S.G. Codes</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="mainForm">
+                <div class="front">
+                    <h1>LOGIN</h1>
+                    <form>
+                        <input type="text" placeholder="Username" /><br />
+                        <input type="password" placeholder="Password" /><br />
+                        <button type="submit">Login</button>
+                    </form>
+                    <div class="options">
+                        <div class="option">Forgot Password</div>
+                        <div class="option" onclick="flip()">Create an Account</div>
+                    </div>
+                </div>
+                <div class="back">
+                    <h1>SIGNUP</h1>
+                    <form>
+                        <input type="text" placeholder="Full Name" /><br />
+                        <input type="text" placeholder="Username" /><br />
+                        <input type="password" placeholder="Password" /><br />
+                        <button type="submit">Signup</button>
+                    </form>
+                    <div class="options">
+                        <div class="option" onclick="flip()">Have an Account?Login</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function flip() {
+                const mainForm = document.querySelector('.mainForm');
+                if(mainForm.style.transform == 'rotateY(180deg)')
+                    mainForm.style.transform = 'rotateY(0deg)'
+                else 
+                mainForm.style.transform = 'rotateY(180deg)'
+            }
+        </script>
+    </body>
+</html>
